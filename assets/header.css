@@ -1,6 +1,10 @@
 header{
     width: 100%;
     padding: 28 8%; /* 8% pra ficar responsivo*/
+    position: sticky;
+    top: 0;
+    background-color: #ffe8b4;
+    z-index: 3;
 }
 
  #navbar {
@@ -21,12 +25,12 @@ header{
 
 .nav_item a {
     text-decoration: none;
-    color: #f1f1f1;
+    color: black;
     font-weight: 600;
 }
 
 .nav_item.active a {
-    color: #f1f1f1;
+    color: black;
     border-bottom: 2px solid  #E6882A;
 }
 
@@ -47,8 +51,7 @@ header{
     #mobile_btn{
         display: block;
         border: none;
-        margin: 25px;
-        margin-top: 0%;
+        margin-left: 20px;
         background-color: transparent;
         font-size: 1.6rem;
         cursor: pointer;

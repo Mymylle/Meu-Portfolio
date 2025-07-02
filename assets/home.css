@@ -18,15 +18,21 @@
 
 #banner .title{
     font-size: 4rem;
-    color: #f1f1f1;
+    color: black;
+    text-align: justify;
 }
 
 #banner .title span{
-    color: #E6882A;
+
+    color: #ff8a0c;
+    display: inline; 
+    white-space: wrap;
+    
 }
 
 #banner .description{
     font-size: 1.2rem;
+    text-align: justify;
 }
 
 #perfil{
@@ -45,21 +51,29 @@
     margin-left: 280px;
 }
 
-.shape {
-    background-color: #DCBE75;
-    width: 30.5%;
-    height: 90%;
-    margin-left: 0px;
-    position: absolute;
-    box-shadow:  0px 0px 12px 4px rgb(0,0,0,0.2);
-    border-radius: 35% 40% 35% 40%;
-    left: 54%;
-    top: 34px;
-    right: 0;
-    z-index: 1;
+
+
+@media screen and (max-width: 1510px) {
+     #banner {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+        margin-top: 0;
+        gap: 25px;
+        margin-left: 0;
+    }
+
+     #banner .title {
+       
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
 }
-
-
 
 
 @media screen and (max-width: 1170px) {
@@ -96,17 +110,7 @@
         box-shadow: 0 4px 16px 0 rgba(0,0,0,0.10);
         background: #fff;
     }
-    
-    .shape {
-        display: flex;
-        align-items: center;
-        border-radius: 38% 30% 38% 30%;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 52%;
-        height: 210px;
-        top: 71.5px;
-    }
+ 
     
     #banner {
         width: 100%;
@@ -126,7 +130,8 @@
         margin-bottom: 10px;
     }
     #banner .description {
-        font-size: 1rem;
-        text-align: center;
+        font-size: 0.9rem;
+        text-align: justify;
+        margin: 0px 30px;
     }
 }

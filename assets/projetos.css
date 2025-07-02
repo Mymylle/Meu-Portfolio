@@ -1,0 +1,153 @@
+#myprojetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 617.2px);
+}
+
+#projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    margin-top: 10px;
+}
+
+.projeto-item {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    gap: 0px;
+    /*border-radius: 20px;*/
+    height: 600px;
+    width: 100%;
+    padding: 10px;
+    background-color:#f7b16788;
+    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.1);
+    bottom: 0;
+    /*position: relative;
+    z-index: 2;*/
+}
+
+    #myprojetos span {
+       line-break: auto;
+    }
+
+#myprojetos h3, span, #link-project {
+    line-height: 35px;
+    margin-left: 5rem;
+    margin-top: 3rem;
+  /*  position: relative;
+    z-index: 3;*/
+}
+
+
+#myprojetos img {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    transform: translatey(-152%);
+    bottom: 50%;
+    left: 20rem;
+    margin-right: 0;
+    width: 43%;
+    height: 20rem;
+    border-radius:  15% 18% 18% 15%;
+    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+
+.projeto-description{
+    color: #1d1d1d;
+    line-break: anywhere;
+}
+
+#link-project {
+    display: flex;
+    gap: 18px;
+
+}
+
+ #link-project a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    background-color: #FEFAE0;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #1d1d1d;
+    box-shadow: 0px 0px 12px 4px rgba(28, 188, 73, 0.422);
+    transition: box-shadow .3s ease, transform .3s ease !important; 
+}
+
+#link-project a:hover {
+    box-shadow: 0px 0px 12px 4px rgba(205, 134, 12, 0.897) !important; 
+    transform: scale(1.1) !important; 
+}
+
+@media screen and (max-width: 1170px) {
+    #projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section-title {
+        margin-top: 8vh;
+    }
+
+    .section-subtitle {
+        padding-top: 10px;
+    }
+    
+    #myprojetos img {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        left: 0;
+        bottom: 70px;
+        border-radius:  15% 13% 15% 13%;
+        width: 45%;
+        height: 8rem;
+        
+    }
+
+    #projects span {
+       line-break: normal;
+    }
+
+    #myprojetos h3, span, #link-project {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        line-height: 22px;
+
+    }
+    
+    .projeto-item {
+        flex-wrap: wrap;
+        width: 100%;
+        text-align: justify;
+    }
+
+    #link-project {
+        margin-top: 238px;
+    }
+}
+
+/*
+@media screen and (max-width: 1293px) {
+    .projeto-item {
+
+    }
+}
+*/

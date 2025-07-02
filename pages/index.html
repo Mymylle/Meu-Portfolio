@@ -2,16 +2,20 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="stylesheet" href="/pages/header.css">
-    <link rel="stylesheet" href="/pages/style.css">
-    <link rel="stylesheet" href="/pages/home.css">
-    <link rel="stylesheet" href="/pages/projetos.css">
+    <link rel="stylesheet" href="/assets/home.css">
+    <link rel="stylesheet" href="/assets/header.css">
+    <link rel="stylesheet" href="/assets/projetos.css">
+    <link rel="stylesheet" href="/assets/knowledges.css">
+    <link rel="stylesheet" href="/assets/footer.css">
+    <link rel="stylesheet" href="/assets/style.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Meu Portfólio</title>
 </head>
 
@@ -21,13 +25,13 @@
         <nav id="navbar">
             <ul id="nav_list">
                 <li class="nav_item active">
-                    <a href="#sobre">Sobre mim</a>
+                    <a href="#home">Sobre mim</a>
                 </li>
                 <li class="nav_item">
                     <a href="#projetos">Meus Projetos</a>
                 </li>
                 <li class="nav_item">
-                    <a href="#conhecimentos">Meus Conhecimentos</a>
+                    <a href="#knowledges">Meus Conhecimentos</a>
                 </li>
             </ul>
 
@@ -39,13 +43,13 @@
         <div id="mobile_menu">
             <ul id="mobile_nav_list">
                 <li class="nav_item">
-                    <a href="#sobre">Sobre mim</a>
+                    <a href="#home">Sobre mim</a>
                 </li>
                 <li class="nav_item">
-                    <a href="#projetos">Meus Projetos</a>
+                    <a href="#myprojetos">Meus Projetos</a>
                 </li>
                 <li class="nav_item">
-                    <a href="#contatos">Contatos</a>
+                    <a href="#knowledges">Conhecimentos</a>
                 </li>
             </ul>
         </div>    
@@ -55,22 +59,22 @@
     
     <main id="content">
         <section id="home">
-            <div class="shape"></div>
+
             <div id="banner">
 
-                <h1 class="title">Oi! Me chamo 
-                    <span>Queiza</span>
+                <h1 class="title">Oi! Me chamo <span>Queiza</span>
                 </h1>
                 <p class="description">
-                Lorem ipsum dolor sit amet. Et blanditiis reiciendis aut
+                Sou estudante de programação e apaixonada por aprender. Gosto de criar páginas simples, funcionais e que transmitam personalidade. Este portfólio mostra um pouco da minha evolução e projetos.
+</p>
                 </p>
             
                 <div class="social-media-buttons">
-                    <a href="linkdowhats">
+                    <a href="https://wa.me/557188734771">
                         <i class="fa-brands fa-whatsapp"></i>
                     </a>
 
-                    <a href="linkdowhats">
+                    <a href="https://www.linkedin.com/in/queiza-samylle-190060289/">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
 
@@ -89,90 +93,130 @@
         <section id="myprojetos"> 
                 <h2 class="section-title">Meus projetos</h2>
                 
-            <div id="projects"> 
-
-                <div class="projeto-item">
-
-                    <h3 class="section-subtitle" id="right-content">TechSolutions</h3>
-
-                    <span class="projeto-description" id="right-content">
-                    Nesse projeto...Lorem ipsum dolor sit amet. Et blanditiis reiciendis aut
-                    </span>
-                <div id="link-project">
-
-                    <a href="linkdowhats">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-
-                    <a href="https://github.com/Mymylle">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-
-                </div>
-
-                <div class="projetos-img">
-                        <img src="/img/TechSolutions.png" alt="" id="gif">
-                    </div>
-                </div>        
+                <div id="projects"> 
                     
-                <div class="projeto-item">
-                    <h3 class="section-subtitle" id="right-content">TechConnect</h3>
-
-                        <span class="projeto-description" id="right-content">
-                            Nesse projeto...Lorem ipsum dolor sit amet. Et blanditiis reiciendis aut
-                        </span> 
-
-                    <div id="link-project">
-
-
-                    <a href="linkdowhats">
-                        <i class="fa-brands fa-linkedin"></i>
+                    <div class="projeto-item">
+                        
+                        <h3 class="section-subtitle">TechSolutions</h3>
+                        
+                        <span class="projeto-description">
+                            Projeto de uma página institucional de <br>uma empresa fictícia de tecnologia,<br> paleta suave e navegação simples.
+                        </span>
+                        <div id="link-project">
+                            
+                            <a href="https://github.com/Mymylle/TechSolutions.git">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            
+                            <a href="https://github.com/Mymylle">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>        
+                    <img src="/img/TechSolutions.png"  alt="" id="gif">
+            
+            <div class="projeto-item">
+                <h3 class="section-subtitle">TechConnect</h3>
+                
+                <span class="projeto-description">
+                    Plataforma de conexão entre profissionais e clientes,<br> com estrutura de cards e organização por categorias.<br> Projeto voltado para prática de HTML e CSS.
+                </span> 
+                
+                <div id="link-project">
+                    <a href="https://github.com/Mymylle/TechConnect.git">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     </a>
-
+                    
                     <a href="https://github.com/Mymylle">
                         <i class="fa-brands fa-github"></i>
                     </a>
-
-                </div>
-
-                    <div class="projetos-img">
-                        <img src="/img/TechConnect.png" alt="" id="gif">
-                    </div>    
-
-                </div>
-
-                
-                <div class="projeto-item">
-                    <h3 class="section-subtitle" id="right-content">Youtube</h3>
-                        <span class="projeto-description" id="right-content">
-                            Nesse projeto...Lorem ipsum dolor sit amet. Et blanditiis reiciendis aut
-                        </span>
-                    <div id="link-project">
-
-
-                        <a href="linkdowhats">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-
-                        <a href="https://github.com/Mymylle">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-
-                    </div>   
-                                     
-                    <div class="projetos-img">
-                        <img src="/img/Youtube.png" alt="" id="gif"> 
-                    </div>                    
+                    
                 </div>
             </div>
+            <img src="/img/TechConnect.png"  alt="" id="gif">  
+
+                
+            <div class="projeto-item">
+                <h3 class="section-subtitle">Youtube</h3>
+                <span class="projeto-description">
+                    Clone da interface do YouTube, feito para <br> treinar grid layout, ícones, posicionamento e<br>  responsividade com HTML e CSS.
+                 <br>   Ainda em processo...
+                </span>
+                <div id="link-project">
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                    
+                    <a href="https://github.com/Mymylle">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>   
+            </div>
+            <img src="/img/Youtube.png" alt="" id="gif"> 
+            </div>
+        </section>
+
+
+        <section class="knowledges" id="knowledges">
+
+            <div id="knowledges-content">
+                <h2 class="section-title">
+                    Meus conhecimentos
+                </h2>
+                <div class="carousel-slide active" id="html-color">
+                    <i class="fa-brands fa-html5" > HTML</i>
+                    <p>Nível Iniciante</p>
+                </div>
+
+                <div class="carousel-slide" id="css-color">
+                    <i class="fa-brands fa-css3-alt"  > CSS</i>
+                    <p>Nível Iniciante</p>
+                </div>
+
+                <div class="carousel-slide" id="js-color">
+                    <i class="fa-brands fa-js" > JAVASCRIPT</i>
+                    <p>Nível Iniciante</p>
+
+                </div>
+
+                <div class="nav-buttons">
+                    <button id="btn-prev">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <button id="btn-next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+            </div>
+
         </section>
 
     </main>
 
-    <footer class="">
-        <p>&copy; 2025 by Queiza Sâmylle. Todos os direitos reservados.</p>
+    <footer>
+        <img src="/img/wave (1).svg" alt="">
+        <div id="footer-items">
+            <span id="copyright">
+                &copy; 2025 by Queiza Sâmylle. Todos os direitos reservados.
+            </span>     
+            <div class="social-media-buttons">
+                    <a href="https://wa.me/557188734771">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/queiza-samylle-190060289/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+
+                    <a href="https://github.com/Mymylle">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+            </div>
+        </div>
+                
     </footer>
-    <script src="script.js"></script>
+    <script src="/assets/script.js"></script>
 </body>
 
 </html>
